@@ -1,11 +1,15 @@
 <h1>Books</h1>
 <% @books.each do |book| %>
-<table><%= book.title %></table>
+<table>
+  <%= book.title %>, <%= book.body %>
+  <%= link_to "Destroy", books_path(@book), method: :delete, "data-confirm" => "Are you sure?" %>
+</table>
 <% end %>
 
 
+
 <h2>New book</h2>
-<%= form_with model:@book, local:true do |f| %>
+<%= form_with model: @book, local:true do |f| %>
   <h4>Title</h4>
   <%= f.text_field :title %>
   <h4>Body</h4>
