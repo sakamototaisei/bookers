@@ -8,6 +8,9 @@
 }
 
 
+// index-----------------------------------------
+
+
 body {
     background-color: #fff;
     color: #333;
@@ -83,4 +86,25 @@ label {
 
 .actions {
   margin-top: 10px;
+}
+
+
+// フラッシュ------------------------
+
+
+.flash {
+    color: green;
+}
+
+// show-----------------------
+
+p {
+    margin: 33px;
+}
+
+// edit----------------------
+
+.action {
+    margin: 10px 0;
+    padding: 1px 6px;
 }
