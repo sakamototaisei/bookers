@@ -2,6 +2,7 @@ class BooksController < ApplicationController
   
   def index
     @books = Book.all.order(created_at: :desc)
+    @books = Book.all
     @book = Book.new
   end
 

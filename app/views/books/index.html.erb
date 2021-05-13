@@ -25,7 +25,7 @@
   <% if @book.errors.any? %>
     <%= @book.errors.count %>
     <% @book.errors.full_messages.each do |message| %>
-      <%= message %>
+      errors prohibited this book from being saved <%= message %>
     <% end %>
   <% end %>
   
